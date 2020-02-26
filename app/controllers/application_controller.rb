@@ -7,3 +7,5 @@ class ApplicationController < Sinatra::Base
     erb :index
   end
 end
+
+# rspec spec/features/04_basic_view_spec.rb
