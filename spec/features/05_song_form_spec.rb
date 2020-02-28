@@ -28,11 +28,11 @@ describe "Song Forms" do
         check "New Age Garbage"
         fill_in "Artist Name", with: artist_name
         click_on "Create"
-
         expect(page).to have_content(song_name)
         expect(page).to have_content(artist_name)
         expect(page).to have_content(genre_2_name)
         expect(page).to have_content("Successfully created song.")
+        
       end
 
       it "redirects to '/songs/:slug' after creation" do
